@@ -83,14 +83,10 @@ finalScore(inning, 9) might return:
 function finalScore(inning, numInning){
 
   let homeScore = 0;
-
-  for (let i = 0; i < numInning; i++){
-    homeScore = inning() + homeScore;
-  };
-
   let awayScore = 0;
 
   for (let i = 0; i < numInning; i++){
+    homeScore = inning() + homeScore;
     awayScore = inning() + awayScore;
   };
 
