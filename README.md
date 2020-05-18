@@ -42,6 +42,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closures are functions nested within parents functions that are able to call variables from the parent function and change them, even after the parent function has already closed.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +65,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+newRoll is a closure because it represents a private variable that cannot be accessed without calling the parent fuction 'personalDice'
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+the name parameter is always the same - the newRoll variable could change
+
 c. What is the lexical scope of `newRoll`? 
+newRoll is a closure - this means it has lexical scope of its parent function, so in this case, 'personalDice'
 
 ### Task 3 - Stretch Goals
 
